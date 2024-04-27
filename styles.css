@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root{
+    --background: linear-gradient(135deg, #667eea7e 0%,#764ba298 100%);
+    --color-primary:#667eea;
+    --color-secundary:#59d5da;
+    --color-tercery: #54709a;
+    --color-cuarto: #798eeb;
+    --boton-padding: 20px 40px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+
+.logo{
+    margin-left: 100px;
+  }
+/*.Logo-png{
+    margin-top: 10px;
+}*/
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), #779fbad7), url(recursos/Fondo.jpg) center bottom/cover fixed no-repeat;
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    background-position: center 55%; /* Posiciona el fondo centrado horizontalmente y en la parte superior verticalmente */
+    background-size: cover; /* Ajusta el tamaño de la imagen de fondo para cubrir todo el área del contenedor */
+}
+
+.header-content {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 100px; /* Ajusta este valor según sea necesario para bajar más el texto */
+}
+
+.hero_wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    margin-bottom: -1px;
+
+}
+
+
+.menu{
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: #FFFDFC;
+    font-size: 25px;
+    font-weight: 800;
+}
+.menu.container {
+    background-color: #54709aef; /* Agregar fondo negro al contenedor del menú */
+    padding: 10px; /* Ajustar el relleno según sea necesario */
+    width: 100%; /* Hacer que el contenedor abarque todo el ancho de la página */
+    max-width: 100%; /* Garantizar que el contenedor no exceda el ancho máximo de la página */
+    box-sizing: border-box; /* Incluir el relleno y el borde en el ancho total */
+    position: fixed; /* Hacer que el contenedor sea fijo */
+    top: 0; /* Fijar el contenedor en la parte superior */
+    left: 0; /* Fijar el contenedor en la parte izquierda */
+    height: 60px; /* Ajustar la altura del contenedor */
+    line-height: 30px; /* Ajustar la altura de línea para centrar verticalmente el contenido */
+  }
+.menu .navbar ul li{
+    list-style: none;
+    position: relative;
+    float: left;
+}
+/*Botones de arriba*/
+.menu .navbar ul li a{
+    list-style: none;
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFDFC;
+    display: block;
+    font-weight: 600;
+}
+/*hover:cambiar enlaces de color*/
+.menu .navbar ul li a:hover{
+    color: var(--color-primary);
+    }
+
+#menu{
+    display: none;
+}
+
+.menu-icon{
+    width: 25px;
+}
+
+.menu label{
+    cursor:pointer;
+    display: none;
+}
+
+.header-content{
+    text-align: center;
+}
+
+.header-content h1{
+    font-size: 75px;
+    line-height: 80px;
+    color: #F9FAFC ;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    margin-top: 0px;
+
+}
+
+.header-content p{
+    font-size: 20px;
+    color: #c5c5c5;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+
+.presentation_picture{
+    width: 10%; /* La imagen ocupará el 50% del ancho del contenedor */
+    height: auto;
+    margin-top: 20px;
+}
+.btn-1, .btn-2{
+    display: inline-block;
+    text-align: center;
+    background: var(--color-secundary);
+    padding: var(--boton-padding);
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    margin-bottom: 40px;
+
+}
+
+.btn-1:hover{
+    background-color: white;
+    color: var(--color-primary);
+}
+
+
+.hero_wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+
+}
+
+.coffe{
+    border-top: none;
+    padding: 100px 0;
+    background-color: #e1e2e6;
+    position: relative;
+}
+.coffe-content{
+    text-align: center;
+}
+.coffe-content h2{
+    font-size: 40px;
+    line-height: 70px;
+    color: #323337;
+    padding: 0;
+    /*margin-bottom: 15px;*/
+}
+
+.txt-p{
+    font-size: 18px;
+    color: #414247;
+    padding:0;
+    margin-bottom: 35px;
+}
+
+.coffe-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.coffe-1{
+    padding: 25px;
+}
+.coffe-1 img{
+    width: 200px;
+}
+/*revisar esto*/
+.coffe-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.coffe-1 h3{
+    color: #323337;
+    font-size: 20px;
+    margin-bottom: 15px;    
+}
+
+.servicios{ 
+    background:#d5d5d5;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    padding: 100px 0;
+}
+.servicios-content{
+    text-align: center;
+}
+
+.servicios-content h2{
+    font-size: 40px;
+    line-height: 70px;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+.servicios-content p{
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+
+.services{ 
+    background-image: linear-gradient(
+        rgba(38, 37, 37, 0.7),
+        rgba(80, 80, 80, 0.7)),
+        url(recursos/Fondo_1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    padding: 100px 0;
+}
+
+.services-content{
+    text-align: center;
+}
+
+.services-content h2{
+    font-size: 40px;
+    line-height: 70px;
+    color: #FFFDFC;
+    margin-bottom: 50px;
+}
+
+.services-content p{
+    font-size: 16px;
+    color: #c5c5c5;
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+
+.services-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+
+
+
+.general{
+    display: flex;
+}
+
+ul {
+    list-style-type: disc; /* Tipo de viñeta */
+    padding-left: 20px; /* Ajuste de la sangría de la lista */
+}
+
+ul li {
+    margin-bottom: 10px; /* Espacio entre elementos de la lista */
+}
+
+ul li::marker {
+    color: var(--color-tercery)/* Color de las viñetas */
+}
+
+.general-1 {
+    width: 50%; /* Reducir el ancho */
+    padding: 50px 100px; /* Reducir el padding */
+    background-color: #ffffff;
+}
+
+.general-2 {
+    width: 50%; /* Reducir el ancho */
+    padding: 50px 100px; /* Reducir el padding */
+    background-image: url(recursos/bici.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain; /* Ajustar la imagen para que quepa dentro del div */
+}
+
+.general-3 {
+    width: 50%; /* Reducir el ancho */
+    padding: 50px 100px; /* Reducir el padding */
+    background-image: url(recursos/doctores.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain; /* Ajustar la imagen para que quepa dentro del div */
+}
+
+h2{
+    font-size:40px;
+    line-height: 40px;
+    color: #323337;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 16px;
+    color: #414247;
+    margin: 25px 0 45px 0;
+}
+.btn-3{
+    display: inline-block;
+    text-align: center;
+    background: var(--color-secundary);
+    padding: var(--boton-padding);
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    margin-bottom: 30px;
+    margin-left: 160px;
+
+}
+.blog{
+    padding: 100px 0;
+    text-align: center;
+}
+
+.blog-content{
+    display: flex;
+    justify-content: space-between;    
+}
+
+.blog-1{
+    padding: 15px 55px;
+}
+
+.blog-1 img{
+    /*width: 250px;
+    border-radius: 15px;
+    margin-bottom: 15px;*/  
+
+    object-fit: cover;
+    height: 300px;
+    width: 200px;
+    border-radius: 15px;
+    box-shadow:0 2px 5px 0 rgba(0, 0,0, 0.5);
+    transition: .3s ease-in-out;
+}
+
+.blog-1 h3{
+    font-size: 25px;
+    color: #323337;
+}
+
+.medidas {
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+.btn-4{
+    display: inline-block;
+    text-align: center;
+    background: var(--color-tercery);
+    padding: var(--boton-padding);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+
+.footer{
+    padding: 20px 0;
+    background-color: #000000;
+}
+
+.footer-content{
+   display: flex;
+   justify-content: space-between; 
+}
+
+.link h3{
+    font-size: 18px;
+    color: #F9FAFC;
+    margin-bottom: 15px;
+}
+
+.link a{
+    font-size: 16px;
+    color: #c5c5c5;
+    display: block;
+    margin-bottom: 15px;
+}
+.link ul li{
+    list-style: none;
+}
+
+
+h4,h2,small, a{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none; 
+}
+
+
+
+
+@media(max-width:991px){
+    .logo{
+        margin-left: 50px;
+      }
+    .menu{
+        padding: 30px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu label img {
+        max-width: 50px; /* Ajusta este valor según lo pequeña que quieras que se vea la imagen */
+        height: auto; /* Para mantener la proporción de la imagen */
+        display: block; /* Para evitar que la imagen herede estilos de línea */
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left:0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .header{
+        min-height: 0vh;
+    }
+
+    .header-content{
+        padding: 100px 30px;
+    }
+
+    .header-content p{
+        padding: 0;
+    }
+
+    .coffe{
+        padding: 30px;
+    }
+    .coffe-content h2{
+        padding: 0;
+    }
+
+    .txt-p{
+        padding: 0;
+    }
+
+    .coffe-group{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .coffe-img{
+        display: none;
+    }
+
+    .services{
+        padding: 30px
+    }
+
+    .services-content p{
+        padding: 0;
+    }
+
+    .services-group{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .services-1{
+       margin-bottom: 25px; 
+    }
+
+    .general{
+        flex-direction: column;
+    }
+
+    .general-1{
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .general-2, general-3{
+        display: none;
+    }
+
+    .blog{
+        padding: 30px;
+    }
+
+    .blog-content{
+        flex-direction: column;
+    }
+
+    .blog-1{
+        padding: 0;
+    }
+
+    .footer{
+        padding: 30px;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
